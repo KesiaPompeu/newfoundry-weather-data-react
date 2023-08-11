@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.widget-wrapper {
+    max-width: 75%;
+    margin: auto;
+}
+
+.widget {
+    background: url(./assets/Ann-Arbor.png) no-repeat ;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.coord {
+    text-align: left;
+}
+
+.widget .city {
+    background-color: #f5f5f587;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 0.5em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.weather .item {
+    width: 200px;
+    background-color: #f5f5f5e8;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #000;
+}
+
+.text-sm {
+    font-size: 0.65em;
+    letter-spacing: 0.1em;
+}
+
+.value {
+    font-size: 3.5em;
+    font-family: monospace;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .widget .city {
+        text-align: center;
+    }
+    .widget .city h1 {
+        font-size: 1.5em;
+    }
+    .coord {
+        text-align: center;
+    }
+    .flex {
+        flex-direction: column;
+    }  
+    .flex .item {
+        width: 100%;
+    }  
+}
